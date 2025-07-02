@@ -15,7 +15,7 @@
 import os
 from pydantic_settings import BaseSettings
 
-class Settings(BaseSettings):
+class settings(BaseSettings):
     # Đường dẫn gốc đến thư mục data, sử dụng đường dẫn tuyệt đối và chuẩn hóa cho Windows
     DATA_DIR: str = os.path.normpath(os.path.abspath(os.path.join(os.path.dirname(__file__), "data")))
     MODEL_PATH: str = os.path.normpath(os.path.join(DATA_DIR, "models"))
