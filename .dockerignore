@@ -1,0 +1,6 @@
+# qa-service/.dockerignore
+app/data/
+app/data/legal_docs/
+app/data/qa_pairs/
+app/data/db_faiss/
+app/data/models/

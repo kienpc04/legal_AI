@@ -1,0 +1,16 @@
+ctransformers
+transformers
+langchain
+langchain-community
+torch
+pypdf
+sentence-transformers
+gpt4all
+faiss-cpu
+openai
+fastapi
+uvicorn
+pyjwt
+pydantic-settings
+requests
+beautifulsoup4
