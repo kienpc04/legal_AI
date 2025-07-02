@@ -1,8 +1,0 @@
-# qa-service/.gitignore
-__pycache__/
-*.pyc
-.env
-app/data/db_faiss/
-app/data/processed/
-app/data/legal_docs/
-app/data/qa_pairs/
