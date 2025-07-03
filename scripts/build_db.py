@@ -20,7 +20,8 @@ FAISS_DIR = Path("app/data/faiss_parts")
 FINAL_FAISS = Path("app/data/db_faiss")
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 TOTAL_DOCS = 222377  # Total documents from previous log
-CACHE_DIR = "D:/hf_cache"  # Use a drive with sufficient space
+CACHE_DIR = os.getenv("HF_HOME", "/app/data/hf_cache")
+os.makedirs(CACHE_DIR, exist_ok=True)  # Use a drive with sufficient space
 
 # Logging
 logging.basicConfig(level=logging.INFO, filename="vector_store.log", format="%(asctime)s - %(levelname)s - %(message)s")
