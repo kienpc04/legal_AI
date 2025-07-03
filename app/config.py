@@ -16,7 +16,7 @@ import os
 from pydantic_settings import BaseSettings
 from pydantic import Field
 
-class settings(BaseSettings):
+class Settings(BaseSettings):
     # Đường dẫn gốc đến thư mục data, sử dụng đường dẫn tuyệt đối và chuẩn hóa cho Windows
     MODEL_PATH: str = Field(..., env="MODEL_PATH")
     FAISS_PATH: str = Field(..., env="FAISS_PATH")
@@ -26,4 +26,4 @@ class settings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
-
+settings = Settings()

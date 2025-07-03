@@ -7,10 +7,11 @@ pypdf
 sentence-transformers
 gpt4all
 faiss-cpu
+faiss-gpu
 openai
-fastapi
-uvicorn
-pyjwt
-pydantic-settings
+pydantic_settings
 requests
-beautifulsoup4
+langchain_huggingface
+# llama-cpp-python
+fastapi
+datasets

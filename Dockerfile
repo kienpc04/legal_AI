@@ -28,6 +28,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN python scripts/build_db.py
+
 ENV PYTHONUNBUFFERED=1
 
 EXPOSE 8686
